@@ -75,19 +75,44 @@ a {
   }
 }
 
-.text-img {
+.relative {
   position: relative;
+  padding: 20px;
+}
+
+.image-relative {
+  width: 200px;
+  width: -webkit-fill-available;
+
+  @media (max-width: 550px) {
+  }
+}
+
+.absolute-text {
+  color: var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+  background: #fbfbfb80;
+  padding: 10px 10px;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 45;
+}
+
+.absolute {
+  color: var(--color-primary);
+  position: absolute;
+  bottom: 100;
+  font-size: 24px;
+  background: #fbfbfb80;
+  padding: 10 50 10 20;
+  width: 100%;
   text-align: center;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.title-years {
-  font-size: 16px;
-  color: var(--color-primary);
+.experts {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 15;
 }
