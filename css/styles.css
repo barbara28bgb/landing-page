@@ -114,5 +114,94 @@ a {
 .experts {
   font-size: 2rem;
   text-align: center;
-  padding: 0 15;
+  padding: 0 15 70;
+}
+
+h2.welcome-title {
+  position: relative;
+  margin-top: 60px;
+  font-size: 40px;
+}
+@-webkit-keyframes shadow-left-right {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@keyframes shadow-left-right {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+@-webkit-keyframes shadow-right-left {
+  0% {
+    right: 0%;
+  }
+  50% {
+    right: 17.5%;
+  }
+  100% {
+    right: 35%;
+  }
+}
+@keyframes shadow-right-left {
+  0% {
+    right: 0%;
+  }
+  50% {
+    right: 17.5%;
+  }
+  100% {
+    right: 35%;
+  }
+}
+
+h2.welcome-afterbefore:before {
+  content: "LÁMINA";
+  position: ABSOLUTE;
+  z-index: -1;
+  top: -50px;
+  color: #f0f0f0d1;
+  font-size: 85px;
+  font-size: 2.3em;
+
+  -webkit-animation: shadow-left-right;
+  -webkit-animation-duration: 4s;
+  animation: shadow-left-right;
+  animation-duration: 4s;
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  /*    transition: all 0.5s ease-in-out;*/
+}
+h2.welcome-afterbefore:after {
+  content: "ARMADA";
+  position: ABSOLUTE;
+  z-index: -1;
+  top: 20px;
+  color: #e7eef3d1;
+  font-size: 65px;
+  text-align: center;
+  animation: shadow-right-left;
+  animation-duration: 4s;
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
